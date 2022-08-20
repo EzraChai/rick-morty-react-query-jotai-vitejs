@@ -9,7 +9,7 @@ const characterStatus = (status:string) => {
     return <div className="bg-gray-600 w-2 h-2 rounded-full"></div>
 }
 
-export const Character = ({character}) => {
+export const Character = ({character}:any) => {
     return (
         <div className="flex overflow-hidden rounded-lg bg-white dark:bg-zinc-700 dark:text-white">
             <div className="max-w-[14rem]">

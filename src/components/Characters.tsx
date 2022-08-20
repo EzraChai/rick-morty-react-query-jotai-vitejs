@@ -7,7 +7,7 @@ export const Characters = () => {
     const [page,setPage] = useState(1);
     
 
-    const fetchCharacters = async ({queryKey}) => {
+    const fetchCharacters = async ({queryKey}:any) => {
         const response = await fetch(`https://rickandmortyapi.com/api/character?page=${queryKey[1]}`);
         return response.json();
     }
