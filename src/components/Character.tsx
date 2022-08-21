@@ -1,12 +1,12 @@
 const characterStatus = (status:string) => {
     status = status.toLowerCase()
     if (status === "alive"){
-        return <div className="bg-green-600 w-2 h-2 rounded-full"></div>
+        return <div className="bg-green-600 w-2 h-2 rounded-full"/>
     }
     if (status === "dead"){
-        return <div className="bg-red-600 w-2 h-2 rounded-full"></div>
+        return <div className="bg-red-600 w-2 h-2 rounded-full"/>
     }
-    return <div className="bg-gray-600 w-2 h-2 rounded-full"></div>
+    return <div className="bg-gray-600 w-2 h-2 rounded-full"/>
 }
 
 export const Character = ({character}:any) => {
@@ -30,7 +30,6 @@ export const Character = ({character}:any) => {
                     <div className="">{character.origin.name}</div>
                 </div>
             </div>
-            
         </div>
     )
 }
